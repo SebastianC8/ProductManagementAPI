@@ -1,4 +1,4 @@
-# Arquitectura del proyecto:
+# Arquitectura del proyecto
 
 El proyecto está conformado por las siguientes capas:
 
