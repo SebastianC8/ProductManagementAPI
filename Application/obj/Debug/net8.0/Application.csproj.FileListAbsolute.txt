@@ -17,3 +17,4 @@ C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\Application\obj\Debug\net8.
 C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\Application\obj\Debug\net8.0\refint\Application.dll
 C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\Application\obj\Debug\net8.0\Application.pdb
 C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\Application\obj\Debug\net8.0\ref\Application.dll
+C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\Application\obj\Debug\net8.0\Application.sourcelink.json

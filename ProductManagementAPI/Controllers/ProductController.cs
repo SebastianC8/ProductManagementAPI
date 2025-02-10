@@ -102,11 +102,14 @@ namespace ProductManagementAPI.Controllers
             {
                 var query = new GetAllProductsQuery();
                 var result = await _sender.Send(query);
-                return Ok(result);
+
+                var successResponse = new ApiResponse<IEnumerable<ProductResponseDTO>>(200, "OK", result);
+                return Ok(successResponse);
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                var errorResponse = new ApiResponse<ProductResponseDTO>(500, "Internal server error", new List<string> { ex.Message });
+                return StatusCode(500, errorResponse);
             } 
         }
 
