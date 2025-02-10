@@ -1,3 +1,7 @@
+# Arquitectura del proyecto:
+
+El proyecto está conformado por las siguientes capas:
+
 ## Infrastructure
 Capa con configuraciones como clases para conexiones a base de datos y envío de correos electrónicos.
 
