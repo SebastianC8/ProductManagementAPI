@@ -22,10 +22,10 @@ namespace ProductManagementAPI.Middleware
 
                 if (product?.Name == string.Empty || product?.Quantity <= 0)
                 {
-                    context.Response.StatusCode = 400;
-                    await context.Response.WriteAsync(JsonSerializer.Serialize(new {
-                        Message = "El producto debe tener un nombre válido y una cantidad mayor que cero." 
-                    }));
+                    context.Response.StatusCode = StatusCodes.Status400BadRequest;
+                    await context.Response.WriteAsync(JsonSerializer.Serialize(
+                        new { Message = "El producto debe tener un nombre válido y una cantidad mayor que cero." }
+                    ));
                     return;
                 }
 

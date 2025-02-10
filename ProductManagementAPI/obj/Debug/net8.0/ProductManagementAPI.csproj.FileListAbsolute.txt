@@ -186,3 +186,4 @@ C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\ProductManagementAPI\obj\De
 C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\ProductManagementAPI\bin\Debug\net8.0\AutoMapper.dll
 C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\ProductManagementAPI\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\ProductManagementAPI\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\ProductManagementAPI\obj\Debug\net8.0\ProductManagementAPI.sourcelink.json

@@ -8,7 +8,6 @@ using Infrastructure.Contracts;
 using Infrastructure.Data;
 using Infrastructure.Utilities;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
 using ProductManagementAPI.Middleware;
 using Repository.Contracts;
 using Repository.Data.Entities;
