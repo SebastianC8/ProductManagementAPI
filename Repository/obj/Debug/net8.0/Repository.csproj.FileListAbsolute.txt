@@ -1,0 +1,15 @@
+C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\Repository\bin\Debug\net8.0\Repository.deps.json
+C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\Repository\bin\Debug\net8.0\Repository.dll
+C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\Repository\bin\Debug\net8.0\Repository.pdb
+C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\Repository\bin\Debug\net8.0\Infrastructure.dll
+C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\Repository\bin\Debug\net8.0\Infrastructure.pdb
+C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\Repository\obj\Debug\net8.0\Repository.csproj.AssemblyReference.cache
+C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\Repository\obj\Debug\net8.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\Repository\obj\Debug\net8.0\Repository.AssemblyInfoInputs.cache
+C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\Repository\obj\Debug\net8.0\Repository.AssemblyInfo.cs
+C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\Repository\obj\Debug\net8.0\Repository.csproj.CoreCompileInputs.cache
+C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\Repository\obj\Debug\net8.0\Repository.csproj.Up2Date
+C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\Repository\obj\Debug\net8.0\Repository.dll
+C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\Repository\obj\Debug\net8.0\refint\Repository.dll
+C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\Repository\obj\Debug\net8.0\Repository.pdb
+C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\Repository\obj\Debug\net8.0\ref\Repository.dll
