@@ -187,3 +187,15 @@ C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\ProductManagementAPI\bin\De
 C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\ProductManagementAPI\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\ProductManagementAPI\bin\Debug\net8.0\FluentValidation.dll
 C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\ProductManagementAPI\obj\Debug\net8.0\ProductManagementAPI.sourcelink.json
+C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\ProductManagementAPI\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\ProductManagementAPI\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\ProductManagementAPI\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\ProductManagementAPI\bin\Debug\net8.0\Serilog.dll
+C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\ProductManagementAPI\bin\Debug\net8.0\Serilog.AspNetCore.dll
+C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\ProductManagementAPI\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\ProductManagementAPI\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\ProductManagementAPI\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\ProductManagementAPI\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\ProductManagementAPI\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\ProductManagementAPI\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\ProductManagementAPI\bin\Debug\net8.0\Serilog.Sinks.File.dll

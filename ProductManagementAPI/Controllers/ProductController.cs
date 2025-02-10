@@ -9,6 +9,7 @@ using Application.Validators;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using Application.Responses;
 using Repository.Data.Entities;
+using Microsoft.Extensions.Logging;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -21,16 +22,19 @@ namespace ProductManagementAPI.Controllers
         private readonly ISender _sender;
         private IValidator<CreateProductDTO> __productCreateValidator;
         private IValidator<UpdateProductDTO> __productUpdateValidator;
+        private readonly ILogger<ProductController> _logger;
 
         public ProductController(
             ISender sender,
             IValidator<CreateProductDTO> productCreateValidator,
-            IValidator<UpdateProductDTO> productUpdateValidator
+            IValidator<UpdateProductDTO> productUpdateValidator,
+            ILogger<ProductController> logger
         )
         {
             _sender = sender;
             __productCreateValidator = productCreateValidator;
             __productUpdateValidator = productUpdateValidator;
+            _logger = logger;
         }
 
         [HttpPost]
@@ -51,6 +55,7 @@ namespace ProductManagementAPI.Controllers
                 var command = new CreateProductCommand(productDTO);
                 var result = await _sender.Send(command); // Se espera la finalización de la tarea
 
+                _logger.LogInformation("A new product has been created: {@Result}", result);
                 var successResponse = new ApiResponse<ProductResponseDTO>(201, "Product created successfully", result);
                 return Ok(successResponse);
 
@@ -103,6 +108,7 @@ namespace ProductManagementAPI.Controllers
                 var query = new GetAllProductsQuery();
                 var result = await _sender.Send(query);
 
+                _logger.LogInformation("Se obtuvieron {Count} productos", result.Count());
                 var successResponse = new ApiResponse<IEnumerable<ProductResponseDTO>>(200, "OK", result);
                 return Ok(successResponse);
             }

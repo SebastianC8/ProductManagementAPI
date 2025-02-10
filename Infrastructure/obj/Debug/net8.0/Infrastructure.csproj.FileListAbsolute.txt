@@ -12,3 +12,4 @@ C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\Infrastructure\obj\Debug\ne
 C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
 C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\Infrastructure\obj\Debug\net8.0\Infrastructure.genruntimeconfig.cache
 C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll
+C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\Infrastructure\obj\Debug\net8.0\Infrastructure.sourcelink.json

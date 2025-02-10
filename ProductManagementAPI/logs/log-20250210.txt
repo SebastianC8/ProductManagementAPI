@@ -1,0 +1,240 @@
+2025-02-10 16:56:19.769 -05:00 [INF] Now listening on: https://localhost:7197
+2025-02-10 16:56:19.794 -05:00 [INF] Now listening on: http://localhost:5070
+2025-02-10 16:56:19.796 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-10 16:56:19.797 -05:00 [INF] Hosting environment: Development
+2025-02-10 16:56:19.798 -05:00 [INF] Content root path: C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\ProductManagementAPI
+2025-02-10 16:56:21.431 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7197/swagger/index.html - null null
+2025-02-10 16:56:21.625 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7197/swagger/index.html - 200 null text/html;charset=utf-8 200.2995ms
+2025-02-10 16:56:21.643 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7197/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-10 16:56:21.648 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7197/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 4.9533ms
+2025-02-10 16:56:21.657 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7197/_vs/browserLink - null null
+2025-02-10 16:56:21.685 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7197/_vs/browserLink - 200 null text/javascript; charset=UTF-8 27.6041ms
+2025-02-10 16:56:21.771 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7197/swagger/v1/swagger.json - null null
+2025-02-10 16:56:21.854 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7197/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 82.9945ms
+2025-02-10 16:57:08.669 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7197/api/Product - application/json 53
+2025-02-10 16:57:10.119 -05:00 [INF] Executing endpoint 'ProductManagementAPI.Controllers.ProductController.Add (ProductManagementAPI)'
+2025-02-10 16:57:10.144 -05:00 [INF] Route matched with {action = "Add", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(Application.DTO.CreateProductDTO) on controller ProductManagementAPI.Controllers.ProductController (ProductManagementAPI).
+2025-02-10 16:57:13.714 -05:00 [INF] Executed DbCommand (50ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([Name], [Quantity])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2025-02-10 16:57:13.792 -05:00 [INF] Executing ObjectResult, writing value of type 'Application.Responses.ApiResponse`1[[Application.DTO.ProductResponseDTO, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-10 16:57:13.804 -05:00 [INF] Executed action ProductManagementAPI.Controllers.ProductController.Add (ProductManagementAPI) in 3656.7015ms
+2025-02-10 16:57:13.806 -05:00 [INF] Executed endpoint 'ProductManagementAPI.Controllers.ProductController.Add (ProductManagementAPI)'
+2025-02-10 16:57:13.811 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7197/api/Product - 500 null application/json; charset=utf-8 5142.1874ms
+2025-02-10 16:59:14.185 -05:00 [INF] Now listening on: https://localhost:7197
+2025-02-10 16:59:14.214 -05:00 [INF] Now listening on: http://localhost:5070
+2025-02-10 16:59:14.216 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-10 16:59:14.217 -05:00 [INF] Hosting environment: Development
+2025-02-10 16:59:14.218 -05:00 [INF] Content root path: C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\ProductManagementAPI
+2025-02-10 16:59:15.305 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7197/swagger/index.html - null null
+2025-02-10 16:59:15.483 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7197/swagger/index.html - 200 null text/html;charset=utf-8 183.3402ms
+2025-02-10 16:59:15.497 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7197/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-10 16:59:15.502 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7197/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 4.4926ms
+2025-02-10 16:59:15.508 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7197/_vs/browserLink - null null
+2025-02-10 16:59:15.539 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7197/_vs/browserLink - 200 null text/javascript; charset=UTF-8 31.1666ms
+2025-02-10 16:59:15.627 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7197/swagger/v1/swagger.json - null null
+2025-02-10 16:59:15.698 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7197/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 71.0543ms
+2025-02-10 16:59:19.750 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7197/api/Product - application/json 53
+2025-02-10 16:59:21.747 -05:00 [INF] Executing endpoint 'ProductManagementAPI.Controllers.ProductController.Add (ProductManagementAPI)'
+2025-02-10 16:59:21.767 -05:00 [INF] Route matched with {action = "Add", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(Application.DTO.CreateProductDTO) on controller ProductManagementAPI.Controllers.ProductController (ProductManagementAPI).
+2025-02-10 16:59:24.404 -05:00 [INF] Executed DbCommand (43ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([Name], [Quantity])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2025-02-10 16:59:24.479 -05:00 [INF] Executing ObjectResult, writing value of type 'Application.Responses.ApiResponse`1[[Application.DTO.ProductResponseDTO, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-10 16:59:24.491 -05:00 [INF] Executed action ProductManagementAPI.Controllers.ProductController.Add (ProductManagementAPI) in 2720.0952ms
+2025-02-10 16:59:24.492 -05:00 [INF] Executed endpoint 'ProductManagementAPI.Controllers.ProductController.Add (ProductManagementAPI)'
+2025-02-10 16:59:24.498 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7197/api/Product - 500 null application/json; charset=utf-8 4748.1501ms
+2025-02-10 17:03:12.491 -05:00 [INF] Now listening on: https://localhost:7197
+2025-02-10 17:03:12.522 -05:00 [INF] Now listening on: http://localhost:5070
+2025-02-10 17:03:12.525 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-10 17:03:12.526 -05:00 [INF] Hosting environment: Development
+2025-02-10 17:03:12.526 -05:00 [INF] Content root path: C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\ProductManagementAPI
+2025-02-10 17:03:13.548 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7197/swagger/index.html - null null
+2025-02-10 17:03:13.731 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7197/swagger/index.html - 200 null text/html;charset=utf-8 188.2914ms
+2025-02-10 17:03:13.745 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7197/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-10 17:03:13.751 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7197/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 5.983ms
+2025-02-10 17:03:13.758 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7197/_vs/browserLink - null null
+2025-02-10 17:03:13.789 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7197/_vs/browserLink - 200 null text/javascript; charset=UTF-8 31.467ms
+2025-02-10 17:03:13.865 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7197/swagger/v1/swagger.json - null null
+2025-02-10 17:03:13.941 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7197/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 75.4033ms
+2025-02-10 17:03:17.492 -05:00 [INF] Request starting HTTP/1.1 POST https://localhost:7197/api/Product - application/json 53
+2025-02-10 17:03:20.167 -05:00 [INF] Executing endpoint 'ProductManagementAPI.Controllers.ProductController.Add (ProductManagementAPI)'
+2025-02-10 17:03:20.187 -05:00 [INF] Route matched with {action = "Add", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(Application.DTO.CreateProductDTO) on controller ProductManagementAPI.Controllers.ProductController (ProductManagementAPI).
+2025-02-10 17:03:24.448 -05:00 [INF] Executed DbCommand (45ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([Name], [Quantity])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2025-02-10 17:03:24.482 -05:00 [INF] A new product has been created: {"Id":19,"Name":"Nuevo producto","Quantity":10,"$type":"ProductResponseDTO"}
+2025-02-10 17:03:24.491 -05:00 [INF] Executing OkObjectResult, writing value of type 'Application.Responses.ApiResponse`1[[Application.DTO.ProductResponseDTO, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-10 17:03:24.502 -05:00 [INF] Executed action ProductManagementAPI.Controllers.ProductController.Add (ProductManagementAPI) in 4312.3932ms
+2025-02-10 17:03:24.504 -05:00 [INF] Executed endpoint 'ProductManagementAPI.Controllers.ProductController.Add (ProductManagementAPI)'
+2025-02-10 17:03:24.509 -05:00 [INF] Request finished HTTP/1.1 POST https://localhost:7197/api/Product - 200 null application/json; charset=utf-8 7017.4684ms
+2025-02-10 17:04:24.066 -05:00 [INF] Now listening on: https://localhost:7197
+2025-02-10 17:04:24.093 -05:00 [INF] Now listening on: http://localhost:5070
+2025-02-10 17:04:24.095 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-10 17:04:24.096 -05:00 [INF] Hosting environment: Development
+2025-02-10 17:04:24.096 -05:00 [INF] Content root path: C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\ProductManagementAPI
+2025-02-10 17:04:25.663 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7197/swagger/index.html - null null
+2025-02-10 17:04:25.836 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7197/swagger/index.html - 200 null text/html;charset=utf-8 179.2579ms
+2025-02-10 17:04:25.861 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7197/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-10 17:04:25.866 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7197/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 5.1327ms
+2025-02-10 17:04:25.871 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7197/_vs/browserLink - null null
+2025-02-10 17:04:25.902 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7197/_vs/browserLink - 200 null text/javascript; charset=UTF-8 31.3919ms
+2025-02-10 17:04:25.979 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7197/swagger/v1/swagger.json - null null
+2025-02-10 17:04:26.049 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7197/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 70.3934ms
+2025-02-10 17:04:37.216 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7197/api/Product/GetAllProducts - null null
+2025-02-10 17:04:38.588 -05:00 [INF] Executing endpoint 'ProductManagementAPI.Controllers.ProductController.GetAll (ProductManagementAPI)'
+2025-02-10 17:04:38.604 -05:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller ProductManagementAPI.Controllers.ProductController (ProductManagementAPI).
+2025-02-10 17:04:39.462 -05:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name], [p].[Quantity]
+FROM [Products] AS [p]
+2025-02-10 17:04:39.519 -05:00 [INF] Se obtuvieron 17 productos
+2025-02-10 17:04:39.527 -05:00 [INF] Executing OkObjectResult, writing value of type 'Application.Responses.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Application.DTO.ProductResponseDTO, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-10 17:04:39.540 -05:00 [INF] Executed action ProductManagementAPI.Controllers.ProductController.GetAll (ProductManagementAPI) in 932.2409ms
+2025-02-10 17:04:39.541 -05:00 [INF] Executed endpoint 'ProductManagementAPI.Controllers.ProductController.GetAll (ProductManagementAPI)'
+2025-02-10 17:04:39.546 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7197/api/Product/GetAllProducts - 200 null application/json; charset=utf-8 2329.9192ms
+2025-02-10 17:12:01.971 -05:00 [INF] Now listening on: https://localhost:7197
+2025-02-10 17:12:01.997 -05:00 [INF] Now listening on: http://localhost:5070
+2025-02-10 17:12:01.999 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-10 17:12:02.000 -05:00 [INF] Hosting environment: Development
+2025-02-10 17:12:02.000 -05:00 [INF] Content root path: C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\ProductManagementAPI
+2025-02-10 17:12:03.088 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7197/swagger/index.html - null null
+2025-02-10 17:12:03.274 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7197/swagger/index.html - 200 null text/html;charset=utf-8 192.2865ms
+2025-02-10 17:12:03.284 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7197/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-10 17:12:03.290 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7197/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 5.4986ms
+2025-02-10 17:12:03.300 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7197/_vs/browserLink - null null
+2025-02-10 17:12:03.333 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7197/_vs/browserLink - 200 null text/javascript; charset=UTF-8 32.7367ms
+2025-02-10 17:12:03.413 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7197/swagger/v1/swagger.json - null null
+2025-02-10 17:12:03.480 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7197/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 66.7955ms
+2025-02-10 17:12:11.883 -05:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7197/api/Product - application/json 65
+2025-02-10 17:12:14.144 -05:00 [INF] Executing endpoint 'ProductManagementAPI.Controllers.ProductController.Update (ProductManagementAPI)'
+2025-02-10 17:12:14.165 -05:00 [INF] Route matched with {action = "Update", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Application.DTO.UpdateProductDTO) on controller ProductManagementAPI.Controllers.ProductController (ProductManagementAPI).
+2025-02-10 17:12:15.208 -05:00 [INF] Executed DbCommand (46ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Name], [p].[Quantity]
+FROM [Products] AS [p]
+WHERE [p].[Id] = @__id_0
+2025-02-10 17:12:15.322 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (Size = 50), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Products] SET [Name] = @p0, [Quantity] = @p1
+OUTPUT 1
+WHERE [Id] = @p2;
+2025-02-10 17:12:18.750 -05:00 [INF] The mail has been sent successfully: System.Net.Mail.MailMessage
+2025-02-10 17:12:18.758 -05:00 [INF] Executing OkObjectResult, writing value of type 'Application.Responses.ApiResponse`1[[Application.DTO.ProductResponseDTO, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-10 17:12:18.769 -05:00 [INF] Executed action ProductManagementAPI.Controllers.ProductController.Update (ProductManagementAPI) in 4601.5302ms
+2025-02-10 17:12:18.771 -05:00 [INF] Executed endpoint 'ProductManagementAPI.Controllers.ProductController.Update (ProductManagementAPI)'
+2025-02-10 17:12:18.776 -05:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7197/api/Product - 200 null application/json; charset=utf-8 6893.0684ms
+2025-02-10 17:13:34.509 -05:00 [INF] Now listening on: https://localhost:7197
+2025-02-10 17:13:34.534 -05:00 [INF] Now listening on: http://localhost:5070
+2025-02-10 17:13:34.536 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-10 17:13:34.537 -05:00 [INF] Hosting environment: Development
+2025-02-10 17:13:34.538 -05:00 [INF] Content root path: C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\ProductManagementAPI
+2025-02-10 17:13:36.595 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7197/swagger/index.html - null null
+2025-02-10 17:13:36.794 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7197/swagger/index.html - 200 null text/html;charset=utf-8 204.044ms
+2025-02-10 17:13:36.816 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7197/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-10 17:13:36.823 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7197/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 7.1962ms
+2025-02-10 17:13:36.826 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7197/_vs/browserLink - null null
+2025-02-10 17:13:36.860 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7197/_vs/browserLink - 200 null text/javascript; charset=UTF-8 33.3255ms
+2025-02-10 17:13:36.950 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7197/swagger/v1/swagger.json - null null
+2025-02-10 17:13:37.046 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7197/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 95.718ms
+2025-02-10 17:13:42.974 -05:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7197/api/Product - application/json 65
+2025-02-10 17:13:45.810 -05:00 [INF] Executing endpoint 'ProductManagementAPI.Controllers.ProductController.Update (ProductManagementAPI)'
+2025-02-10 17:13:45.830 -05:00 [INF] Route matched with {action = "Update", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Application.DTO.UpdateProductDTO) on controller ProductManagementAPI.Controllers.ProductController (ProductManagementAPI).
+2025-02-10 17:13:46.819 -05:00 [INF] Executed DbCommand (44ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Name], [p].[Quantity]
+FROM [Products] AS [p]
+WHERE [p].[Id] = @__id_0
+2025-02-10 17:13:46.931 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (Size = 50), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Products] SET [Name] = @p0, [Quantity] = @p1
+OUTPUT 1
+WHERE [Id] = @p2;
+2025-02-10 17:13:53.560 -05:00 [INF] The mail has been sent successfully: System.Net.Mail.MailMessage
+2025-02-10 17:13:53.569 -05:00 [INF] Executing OkObjectResult, writing value of type 'Application.Responses.ApiResponse`1[[Application.DTO.ProductResponseDTO, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-10 17:13:53.583 -05:00 [INF] Executed action ProductManagementAPI.Controllers.ProductController.Update (ProductManagementAPI) in 7749.2635ms
+2025-02-10 17:13:53.585 -05:00 [INF] Executed endpoint 'ProductManagementAPI.Controllers.ProductController.Update (ProductManagementAPI)'
+2025-02-10 17:13:53.590 -05:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7197/api/Product - 200 null application/json; charset=utf-8 10616.2164ms
+2025-02-10 17:14:55.325 -05:00 [INF] Now listening on: https://localhost:7197
+2025-02-10 17:14:55.356 -05:00 [INF] Now listening on: http://localhost:5070
+2025-02-10 17:14:55.360 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-10 17:14:55.361 -05:00 [INF] Hosting environment: Development
+2025-02-10 17:14:55.362 -05:00 [INF] Content root path: C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\ProductManagementAPI
+2025-02-10 17:14:56.747 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7197/swagger/index.html - null null
+2025-02-10 17:14:56.943 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7197/swagger/index.html - 200 null text/html;charset=utf-8 201.4875ms
+2025-02-10 17:14:56.955 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7197/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-10 17:14:56.962 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7197/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 6.5988ms
+2025-02-10 17:14:56.974 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7197/_vs/browserLink - null null
+2025-02-10 17:14:57.004 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7197/_vs/browserLink - 200 null text/javascript; charset=UTF-8 30.4471ms
+2025-02-10 17:14:57.083 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7197/swagger/v1/swagger.json - null null
+2025-02-10 17:14:57.161 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7197/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 78.5002ms
+2025-02-10 17:15:01.902 -05:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7197/api/Product - application/json 65
+2025-02-10 17:15:03.413 -05:00 [INF] Executing endpoint 'ProductManagementAPI.Controllers.ProductController.Update (ProductManagementAPI)'
+2025-02-10 17:15:03.433 -05:00 [INF] Route matched with {action = "Update", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Application.DTO.UpdateProductDTO) on controller ProductManagementAPI.Controllers.ProductController (ProductManagementAPI).
+2025-02-10 17:15:04.424 -05:00 [INF] Executed DbCommand (42ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Name], [p].[Quantity]
+FROM [Products] AS [p]
+WHERE [p].[Id] = @__id_0
+2025-02-10 17:15:04.537 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (Size = 50), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Products] SET [Name] = @p0, [Quantity] = @p1
+OUTPUT 1
+WHERE [Id] = @p2;
+2025-02-10 17:15:07.317 -05:00 [INF] Email sent successfully to sebasscan@gmail.com. Subject: Alerta: Stock Bajo en Jordan Retro V
+2025-02-10 17:15:07.329 -05:00 [INF] Executing OkObjectResult, writing value of type 'Application.Responses.ApiResponse`1[[Application.DTO.ProductResponseDTO, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-10 17:15:07.340 -05:00 [INF] Executed action ProductManagementAPI.Controllers.ProductController.Update (ProductManagementAPI) in 3903.4321ms
+2025-02-10 17:15:07.341 -05:00 [INF] Executed endpoint 'ProductManagementAPI.Controllers.ProductController.Update (ProductManagementAPI)'
+2025-02-10 17:15:07.346 -05:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7197/api/Product - 200 null application/json; charset=utf-8 5444.5716ms
+2025-02-10 17:16:16.649 -05:00 [INF] Now listening on: https://localhost:7197
+2025-02-10 17:16:16.675 -05:00 [INF] Now listening on: http://localhost:5070
+2025-02-10 17:16:16.678 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-10 17:16:16.679 -05:00 [INF] Hosting environment: Development
+2025-02-10 17:16:16.679 -05:00 [INF] Content root path: C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\ProductManagementAPI
+2025-02-10 17:16:18.236 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7197/swagger/index.html - null null
+2025-02-10 17:16:18.420 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7197/swagger/index.html - 200 null text/html;charset=utf-8 190.1474ms
+2025-02-10 17:16:18.437 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7197/_framework/aspnetcore-browser-refresh.js - null null
+2025-02-10 17:16:18.442 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7197/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 4.9031ms
+2025-02-10 17:16:18.448 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7197/_vs/browserLink - null null
+2025-02-10 17:16:18.487 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7197/_vs/browserLink - 200 null text/javascript; charset=UTF-8 39.0823ms
+2025-02-10 17:16:18.574 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7197/swagger/v1/swagger.json - null null
+2025-02-10 17:16:18.661 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7197/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 87.7786ms
+2025-02-10 17:16:25.273 -05:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7197/api/Product - application/json 65
+2025-02-10 17:16:27.455 -05:00 [INF] Executing endpoint 'ProductManagementAPI.Controllers.ProductController.Update (ProductManagementAPI)'
+2025-02-10 17:16:27.475 -05:00 [INF] Route matched with {action = "Update", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Application.DTO.UpdateProductDTO) on controller ProductManagementAPI.Controllers.ProductController (ProductManagementAPI).
+2025-02-10 17:16:28.471 -05:00 [INF] Executed DbCommand (43ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Name], [p].[Quantity]
+FROM [Products] AS [p]
+WHERE [p].[Id] = @__id_0
+2025-02-10 17:16:28.579 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (Size = 50), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Products] SET [Name] = @p0, [Quantity] = @p1
+OUTPUT 1
+WHERE [Id] = @p2;
+2025-02-10 17:16:50.466 -05:00 [ERR] SMTP exception while sending email to sebasscan@gmail.com
+System.Net.Mail.SmtpException: Failure sending mail.
+ ---> System.Net.Sockets.SocketException (10060): Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.TaskToAsyncResult.End(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Mail.SmtpConnection.ConnectAndHandshakeAsyncResult.InitializeConnectionCallback(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at System.Net.Mail.SmtpClient.ConnectCallback(IAsyncResult result)
+   --- End of inner exception stack trace ---
+   at Infrastructure.Utilities.EmailService.SendEmailAsync(String to, String subject, String body) in C:\Users\SEBASTIAN\source\repos\ProductManagementAPI\Infrastructure\Utilities\EmailService.cs:line 45
+2025-02-10 17:16:50.509 -05:00 [INF] Executing OkObjectResult, writing value of type 'Application.Responses.ApiResponse`1[[Application.DTO.ProductResponseDTO, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-10 17:16:50.522 -05:00 [INF] Executed action ProductManagementAPI.Controllers.ProductController.Update (ProductManagementAPI) in 23043.8323ms
+2025-02-10 17:16:50.524 -05:00 [INF] Executed endpoint 'ProductManagementAPI.Controllers.ProductController.Update (ProductManagementAPI)'
+2025-02-10 17:16:50.530 -05:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7197/api/Product - 200 null application/json; charset=utf-8 25256.9558ms

@@ -1,6 +1,7 @@
 ﻿using Infrastructure.Configuration;
 using Infrastructure.Contracts;
 using Infrastructure.Data;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using System.Net;
 using System.Net.Mail;
@@ -11,10 +12,12 @@ namespace Infrastructure.Utilities
     {
 
         private readonly InfrastructureProperties _infrastructureProperties;
+        private ILogger<EmailService> _logger;
 
-        public EmailService(IOptions<InfrastructureProperties> infrastructureProperties)
+        public EmailService(IOptions<InfrastructureProperties> infrastructureProperties, ILogger<EmailService> logger)
         {
             _infrastructureProperties = infrastructureProperties.Value;
+            _logger = logger;
         }
 
         public async Task<(bool Success, string ErrorMessage)> SendEmailAsync(string to, string subject, string body)
@@ -41,16 +44,17 @@ namespace Infrastructure.Utilities
 
                 await smtpClient.SendMailAsync(mailMessage);
 
-                return (true, ""); // Retorna éxito
+                _logger.LogInformation("Email sent successfully to {Recipient}. Subject: {Subject}", to, subject);
+                return (true, "");
             }
             catch (SmtpException smtpEx)
             {
-                // Aquí puedes manejar errores de SMTP de forma más específica
+                _logger.LogError(smtpEx, "SMTP exception while sending email to {Recipient}", to);
                 return (false, $"SMTP error: {smtpEx.Message}");
             }
             catch (Exception ex)
             {
-                // Captura errores generales
+                _logger.LogError(ex, "General exception while sending email to {Recipient}", to);
                 return (false, $"General error: {ex.Message}");
             }
         }

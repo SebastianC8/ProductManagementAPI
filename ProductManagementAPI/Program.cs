@@ -13,8 +13,19 @@ using Repository.Contracts;
 using Repository.Data.Entities;
 using Repository.Implementation;
 using System.Text.Json.Serialization;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Configurar Serilog
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Information() // Define el nivel mínimo de log (puedes usar Debug, Warning, Error, etc.)
+    .WriteTo.Console() // Envía logs a la consola
+    .WriteTo.File("logs/log-.txt", rollingInterval: RollingInterval.Day) // Envía logs a archivos con rotación diaria
+    .CreateLogger();
+
+// Reemplaza el logger predeterminado de ASP.NET Core con Serilog
+builder.Host.UseSerilog();
 
 // Add services to the container.
 

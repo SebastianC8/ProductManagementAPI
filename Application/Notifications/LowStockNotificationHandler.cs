@@ -27,8 +27,6 @@ namespace Application.Notifications
             var adminEmail = __configuration["EmailSettings:AdminEmail"];
 
             var sendEmail = await __emailService.SendEmailAsync(adminEmail, subject, body);
-
-            // Record mail send on logging
         }
     }
 }
