@@ -14,10 +14,15 @@ namespace Application.Mappers
     {
         public MappingProfile()
         {
+            // Product
             CreateMap<ProductCore, Product>().ReverseMap();
             CreateMap<ProductCore, CreateProductDTO>().ReverseMap();
             CreateMap<ProductCore, UpdateProductDTO>().ReverseMap();
             CreateMap<ProductCore, ProductResponseDTO>().ReverseMap();
+
+            // User
+            CreateMap<UserCore, User>().ReverseMap();
+            CreateMap<UserCore, UserDTO>().ReverseMap();
         }
     }
 }

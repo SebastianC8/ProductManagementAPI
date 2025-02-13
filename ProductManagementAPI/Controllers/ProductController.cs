@@ -10,6 +10,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 using Application.Responses;
 using Repository.Data.Entities;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Authorization;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -37,6 +38,7 @@ namespace ProductManagementAPI.Controllers
             _logger = logger;
         }
 
+        [Authorize(Policy = "OnlyBoss")]
         [HttpPost]
         public async Task<IActionResult> Add(CreateProductDTO productDTO)
         {
@@ -67,6 +69,7 @@ namespace ProductManagementAPI.Controllers
             }
         }
 
+        [Authorize(Policy = "OnlyUser")]
         [HttpPut]
         public async Task<IActionResult> Update(UpdateProductDTO productDTO)
         {
@@ -100,6 +103,7 @@ namespace ProductManagementAPI.Controllers
             }
         }
 
+        [Authorize(Policy = "OnlyClient")]
         [HttpGet("GetAllProducts")]
         public async Task<IActionResult> GetAll()
         {
@@ -119,6 +123,7 @@ namespace ProductManagementAPI.Controllers
             } 
         }
 
+        [Authorize(Policy = "OnlyClient")]
         [HttpGet("GetProductById/{id}")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -144,6 +149,7 @@ namespace ProductManagementAPI.Controllers
             }
         }
 
+        [Authorize(Policy = "OnlyAdmin")]
         [HttpDelete("DeleteProduct/{id}")]
         public async Task<IActionResult> Delete(int id)
         {

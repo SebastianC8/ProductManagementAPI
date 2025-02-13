@@ -14,6 +14,10 @@ using Repository.Data.Entities;
 using Repository.Implementation;
 using System.Text.Json.Serialization;
 using Serilog;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using System.Security.Claims;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -34,6 +38,30 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// JWT AUTHENTICATION
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(option => {
+        option.RequireHttpsMetadata = false;
+        option.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = "ProductManagement.Issuer",
+            ValidAudience = "ProductManagement.Audience",
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("MiClaveSecretaSCS_JWT2025ProductManagement"))
+        };
+    });
+
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("OnlyAdmin", policy => policy.RequireClaim(ClaimTypes.Role, "Admin"));
+    options.AddPolicy("OnlyBoss", policy => policy.RequireClaim(ClaimTypes.Role, "Boss"));
+    options.AddPolicy("OnlyUser", policy => policy.RequireClaim(ClaimTypes.Role, "User"));
+    options.AddPolicy("OnlyClient", policy => policy.RequireClaim(ClaimTypes.Role, "Client"));
+});
+
 // ENTITY FRAMEWORK - DBContext
 builder.Services.AddDbContext<StoreContext>((options) =>
 {
@@ -50,9 +78,11 @@ builder.Services.AddMediatR(cfg =>
 
 // Dependency injection - Repository
 builder.Services.AddScoped<IProductRepository, ProductRepositoryImpl>();
+builder.Services.AddScoped<IUserRepository, UserRepositoryImpl>();
 
 // Dependency injection - Core
 builder.Services.AddScoped<IProductCore, ProductCoreImpl>();
+builder.Services.AddScoped<IUserCore, UserCoreImpl>();
 
 // Email service
 builder.Services.AddScoped<IEmailService, EmailService>();
@@ -89,9 +119,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseMiddleware<ProductMiddleware>();
+//app.UseMiddleware<ProductMiddleware>();
 
 app.UseHttpsRedirection();
+
+// JWT
+app.UseAuthentication();
 
 app.UseAuthorization();
 
